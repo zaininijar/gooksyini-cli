@@ -1,45 +1,46 @@
 # gooksyini-cli
 
-Coding assistant di terminal. Agentic loop + tools (baca/tulis file, grep, shell) lewat model gratis OpenRouter.
+Terminal coding assistant. Agentic loop + tools (read/write files, grep, shell) using free OpenRouter models.
 
 <img src="assets/logo.png" height="120" alt="Gooksyini">
 
-## jalanin
+## Run
 
 ```bash
 git clone https://github.com/zaininijar/gooksyini-cli.git
 cd gooksyini-cli
 npm i
 cp .env.example .env
-# isi OPENROUTER_API_KEY
+# set OPENROUTER_API_KEY
 npm start
 ```
 
-Key gratis: https://openrouter.ai/keys
+Free key: https://openrouter.ai/keys
 
-## usage
+## Usage
 
-Ketik biasa di prompt, misal:
+Type a normal request at the prompt, e.g.:
 
 ```
-baca package.json dan tambah script test
+read package.json and add a test script
 ```
 
 Slash commands: `/help`, `/models`, `/model <slug>`, `/current`, `/clear`, `/exit`.
 
-## tools
+## Tools
 
 `read_file`, `write_file`, `search_file`, `replace_in_file`, `list_directory`, `run_command`.
 
-## config
+## Config
 
-Default model & limit ada di `src/config` (atau file config di project). Env:
+Defaults live under `src/config`. Env:
 
-| Var | Wajib | Ket |
-|-----|-------|-----|
-| `OPENROUTER_API_KEY` | ya | API key |
-| `WORKSPACE_DIR` | tidak | override cwd agent |
+| Var | Required | Description |
+|-----|----------|-------------|
+| `OPENROUTER_API_KEY` | yes | API key |
+| `WORKSPACE_DIR` | no | override agent cwd |
 
-## license
+## License
 
 MIT
+

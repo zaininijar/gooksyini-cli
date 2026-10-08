@@ -2,7 +2,7 @@
 
 Terminal coding assistant. Agentic loop + tools (read/write files, grep, shell) using free OpenRouter models.
 
-<img src="assets/logo.png" height="120" alt="Gooksyini">
+<img src="assets/logo-preview.png" height="120" alt="Gooksyini">
 
 ## Run
 
